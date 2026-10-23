@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Портфолио Web Developer: создание сайтов, лендингов и адаптивная вёрстка.">
+
+    <title>yaroslavcode — Портфолио</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header__inner">
+
+            <a href="#home" class="logo">
+                yaroslav<span>code.</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Открыть меню"
+                aria-controls="navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navigation" id="navigation">
+                <a href="#home" class="navigation__link">Главная</a>
+                <a href="#about" class="navigation__link">Обо мне</a>
+                <a href="#projects" class="navigation__link">Проекты</a>
+                <a href="#services" class="navigation__link">Услуги</a>
+                <a href="#contacts" class="navigation__link">Контакты</a>
+            </nav>
+
+            <a href="https://t.me/yarik_paren" class="header__contact" target="_blank" rel="noopener noreferrer">
+                Обсудить проект
+            </a>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- Главный экран -->
+        <section class="hero" id="home">
+            <div class="container hero__inner">
+
+                <div class="hero__content">
+
+                    <p class="hero__label">
+                        <span class="status-dot"></span>
+                        Открыт к новым проектам
+                    </p>
+
+                    <h1>
+                        Привет! Я <span>Web разработчик</span>
+                    </h1>
+
+                    <p class="hero__description">
+                        Создаю современные сайты, которые хорошо выглядят
+                        на компьютерах и смартфонах. Помогаю превращать
+                        идеи в работающие веб-страницы.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="#projects" class="button button--primary">
+                            Смотреть проекты
+                        </a>
+
+                        <a href="https://t.me/yarik_paren" class="button button--secondary" target="_blank"
+                            rel="noopener noreferrer">
+                            Связаться со мной
+                        </a>
+                    </div>
+
+                    <div class="hero__technologies">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+                <div class="hero__visual" aria-label="Иллюстрация разработчика">
+                    <div class="visual-card">
+                        <div class="visual-card__top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <p>my-project.html</p>
+                        </div>
+
+                        <div class="visual-card__code">
+                            <p><span class="code-blue">&lt;h1&gt;</span></p>
+                            <p class="code-indent">Hello, world!</p>
+                            <p><span class="code-blue">&lt;/h1&gt;</span></p>
+                            <br>
+                            <p><span class="code-purple">const</span> developer = {</p>
+                            <p class="code-indent">creative: <span class="code-green">true</span>,</p>
+                            <p class="code-indent">learning: <span class="code-green">true</span></p>
+                            <p>};</p>
+                        </div>
+
+                        <div class="visual-card__footer">
+                            <span class="status-dot"></span>
+                            Building something new
+                        </div>
+                    </div>
+
+                    <div class="floating-badge floating-badge--html">
+                        HTML
+                    </div>
+
+                    <div class="floating-badge floating-badge--js">
+                        JS
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Обо мне -->
+        <section class="about section" id="about">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-heading__label">Немного обо мне</p>
+                    <h2>Создаю. Изучаю. Развиваюсь.</h2>
+                    <p>
+                        Мне нравится разбираться в том, как устроены сайты,
+                        и превращать идеи в понятные цифровые решения.
+                    </p>
+                </div>
+
+                <div class="about__grid">
+
+                    <div class="about__text">
+                        <h3>Привет, давай знакомиться!</h3>
+
+                        <p>
+                            Я начинающий Web Developer. Изучаю веб-разработку,
+                            создаю собственные проекты и развиваю навыки
+                            в HTML, CSS и JavaScript.
+                        </p>
+
+                        <p>
+                            Для меня важно не просто сверстать страницу,
+                            а сделать её понятной, аккуратной и удобной
+                            на разных устройствах.
+                        </p>
+
+                        <a href="https://t.me/yarik_paren" class="text-link" target="_blank" rel="noopener noreferrer">
+                            Давай обсудим задачу →
+                        </a>
+                    </div>
+
+                    <div class="skills-card">
+                        <h3>Мои технологии</h3>
+
+                        <div class="skill">
+                            <div class="skill__info">
+                                <span>HTML</span>
+                                <span>Структура страниц</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress skill__progress--html"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill__info">
+                                <span>CSS</span>
+                                <span>Стили и адаптивность</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress skill__progress--css"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill__info">
+                                <span>JavaScript</span>
+                                <span>Интерактивность</span>
+                            </div>
+                            <div class="skill__bar">
+                                <div class="skill__progress skill__progress--js"></div>
+                            </div>
+                        </div>
+
+                        <p class="skills-card__note">
+                            Продолжаю учиться и совершенствовать навыки
+                            на собственных проектах.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Проекты -->
+        <section class="projects section" id="projects">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-heading__label">Портфолио</p>
+                    <h2>Мои проекты</h2>
+                    <p>
+                        Несколько работ, в которых я применяю свои знания
+                        и экспериментирую с дизайном.
+                    </p>
+                </div>
+
+                <div class="project-filters" aria-label="Фильтр проектов">
+                    <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">
+                        Все проекты
+                    </button>
+
+                    <button class="filter-button" type="button" data-filter="landing" aria-pressed="false">
+                        Лендинги
+                    </button>
+
+                    <button class="filter-button" type="button" data-filter="business" aria-pressed="false">
+                        Бизнес
+                    </button>
+                </div>
+
+                <div class="projects__grid">
+
+                    <!-- Проект 1: замени ссылку и описание -->
+                    <article class="project-card" data-category="landing">
+                        <div class="project-card__preview project-card__preview--one">
+                            <span class="project-card__number">01</span>
+                            <div class="preview-label">
+                                EDUCATION / LANDING PAGE
+                            </div>
+                        </div>
+
+                        <div class="project-card__content">
+                            <p class="project-card__type">Лендинг</p>
+                            <h3>Сайт репетитора</h3>
+
+                            <p>
+                                Концепция сайта преподавателя с программами
+                                обучения, отзывами и контактами.
+                            </p>
+
+                            <div class="project-card__tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <a href="https://example.com" class="project-card__link" target="_blank"
+                                rel="noopener noreferrer">
+                                Посмотреть проект →
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <!-- Проект 2: замени ссылку и описание -->
+                    <article class="project-card" data-category="business">
+                        <div class="project-card__preview project-card__preview--two">
+                            <span class="project-card__number">02</span>
+                            <div class="preview-label">
+                                BUSINESS / WEBSITE
+                            </div>
+                        </div>
+
+                        <div class="project-card__content">
+                            <p class="project-card__type">Бизнес-сайт</p>
+                            <h3>Коммерческий сайт</h3>
+
+                            <p>
+                                Представление услуг, преимуществ компании
+                                и способов связи с клиентами.
+                            </p>
+
+                            <div class="project-card__tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+
+                            <a href="https://example.com" class="project-card__link" target="_blank"
+                                rel="noopener noreferrer">
+                                Посмотреть проект →
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <!-- Проект 3: замени ссылку и описание -->
+                    <article class="project-card" data-category="landing">
+                        <div class="project-card__preview project-card__preview--three">
+                            <span class="project-card__number">03</span>
+                            <div class="preview-label">
+                                CREATIVE / LANDING PAGE
+                            </div>
+                        </div>
+
+                        <div class="project-card__content">
+                            <p class="project-card__type">Лендинг</p>
+                            <h3>Креативный проект</h3>
+
+                            <p>
+                                Одностраничный сайт с выразительным дизайном,
+                                описанием предложения и призывом к действию.
+                            </p>
+
+                            <div class="project-card__tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <a href="https://example.com" class="project-card__link" target="_blank"
+                                rel="noopener noreferrer">
+                                Посмотреть проект →
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Услуги -->
+        <section class="services section" id="services">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-heading__label">Чем могу помочь</p>
+                    <h2>Услуги</h2>
+                    <p>
+                        Могу помочь с созданием и оформлением веб-страниц
+                        в рамках согласованной задачи.
+                    </p>
+                </div>
+
+                <div class="services__grid">
+
+                    <article class="service-card">
+                        <div class="service-card__icon" aria-hidden="true">
+                            &lt;/&gt;
+                        </div>
+                        <h3>Вёрстка лендингов</h3>
+                        <p>
+                            Создание одностраничных сайтов по макету,
+                            примеру или техническому заданию.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__icon" aria-hidden="true">
+                            ◫
+                        </div>
+                        <h3>Адаптивный дизайн</h3>
+                        <p>
+                            Настройка отображения страницы для компьютеров,
+                            планшетов и смартфонов.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__icon" aria-hidden="true">
+                            JS
+                        </div>
+                        <h3>Интерактивность</h3>
+                        <p>
+                            Добавление меню, фильтров, переключателей
+                            и других простых интерактивных элементов.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Контакты -->
+        <section class="contacts section" id="contacts">
+            <div class="container">
+
+                <div class="contacts__box">
+                    <p class="section-heading__label">Есть идея?</p>
+
+                    <h2>Давай создадим что-то крутое.</h2>
+
+                    <p>
+                        Расскажи о своей задаче — обсудим детали,
+                        сроки и возможный вариант реализации.
+                    </p>
+
+                    <a href="https://t.me/yarik_paren" class="button button--primary" target="_blank"
+                        rel="noopener noreferrer">
+                        Написать в Telegram
+                    </a>
+
+                    <button class="copy-button" id="copy-telegram" type="button" data-copy="https://t.me/yarik_paren">
+                        Скопировать ссылку на Telegram
+                    </button>
+
+                    <p class="copy-status" id="copy-status" aria-live="polite"></p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container footer__inner">
+
+            <a href="#home" class="logo">
+                yaroslav<span>code.</span>
+            </a>
+
+            <p>
+                © <span id="current-year">2026</span> yaroslavcode.
+                Портфолио учебных и личных проектов.
+            </p>
+
+            <a href="https://t.me/yarik_paren" target="_blank" rel="noopener noreferrer">
+                Telegram ↗
+            </a>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
